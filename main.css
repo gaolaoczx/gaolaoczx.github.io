@@ -37,8 +37,9 @@ body
 
 .title
 {
-    width: 100%;
-    text-align: center;
+    width: 2rem;
+    left: 50%;
+    margin-left: -1rem;
 }
 
 .reg 
@@ -46,7 +47,6 @@ body
     right: 1rem;
 }
 
-/* ---- */
 .user,.password
 {
     background-color: white;
