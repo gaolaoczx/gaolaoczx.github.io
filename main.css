@@ -1,96 +1,193 @@
 body
 {
-    font-size: 62.5%;
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0px;
+    margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif;
 }
 
 .container
 {
-    background-color: rgb(239, 240, 244);
-    padding: 0rem;
-    margin: 0rem;
-    height: 100vh;
+    height: 500px;
+    overflow-y: scroll;
 }
 
 .header
 {
     width: 100vw;
-    height: 3rem;
+    height: 48px;
     position: relative;  
     background-color: rgb(95, 192, 205);
 }
 
-.header_text
+.back
 {
+    width: 20px;
     position: absolute;
-    font-size: 1rem;
-    line-height: 3rem;
-    color: white;
-}
-
-.close
-{
-    left: 1rem;
+    left: 10px;
+    top: 12.5px;
 }
 
 .title
 {
-    width: 2rem;
+    color: white;
+    font-size: 18px;
+    display: inline;
+    position: absolute;
     left: 50%;
-    margin-left: -1rem;
+    margin-left: -36px;
+    line-height: 48px;
 }
 
-.reg 
+.user
 {
-    right: 1rem;
-}
-
-.user,.password
-{
-    background-color: white;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
+    background: url(img/bg.png) no-repeat center top;
+    background-size: 100%;
+    width: 100%;
+    height: 145px;
     display: flex;
     align-items: center;
 }
 
-input
+.avatar
 {
-    display: inline-block;
-    border: 0rem;
-    padding: 0.5rem;
-    border-left: 0.1rem solid #eee;
-    outline:medium;
-    width: 100vw;
+    width: 80px;
+    margin: 20px;
 }
 
-.login_img
+.user_info
 {
-    display: inline-block;
-    width: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
+    color: white;
 }
 
-.login_btn
+.name,.age
+{
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.location
+{
+    display: flex;
+    align-items: center;
+}
+
+.location_png
+{
+    width: 15px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.addr
+{
+    font-size: 14px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.skill_title
+{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border-left: 3px solid rgb(95, 192, 205);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+ul
+{
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.condition
+{
+    border-top: 1px solid rgb(185, 185, 185);
+    padding-left: 10px;
+}
+
+.condition li
+{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.star
+{
+    width: 15px;
+    margin-right: 3px;
+}
+
+.intro_item
+{
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(185, 185, 185);
+    font-weight: 500;
+    display: flex;
+}
+
+.item_title
+{
+    display: inline-block;
+    color: #ccc;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    align-self: center; /* 在父元素中垂直居中，高度不会被拉高 */
+}
+
+.item_content
+{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    flex: 1;  /* 若同为子元素，只有自己是1，其他是0，则其他元素只占最小空间，自己占满剩余空间 */
+}
+
+.red
+{
+    color: red;
+}
+
+.intro_item:last-child
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 10px;
+}
+
+button
+{
+    background-color: white;
+    border:2px solid rgb(95, 192, 205);
+    margin-left: 4vw;
+    width: 44vw;
+    height: 45px;
+    font-size: 19px;
+    color: rgb(95, 192, 205);
+    border-radius: 5px;
+}
+
+.active
 {
     background-color: rgb(95, 192, 205);
-    width: 100vw;
-    height: 3.2rem;
-    margin-top: 0.5rem;
-    border: 0rem;
-    font-size: 1rem;
     color: white;
-    outline:medium;
-}
-
-.notice
-{
-    float: right;
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
-    margin-right: 0.8rem;
-    color:  rgb(95, 192, 205);
 }

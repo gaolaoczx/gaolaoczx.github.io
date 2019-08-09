@@ -6,25 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./main.css">
 
-    <title>登录页</title>
+    <title>个人主页</title>
 </head>
 <body>
-    <div class="container"> 
-        <div class="header">
-            <div class="close header_text">注册</div>
-            <div class="title header_text">登录</div>
-            <div class="reg header_text">关闭</div>
-        </div>
+    <div class="header"> 
+        <img src="img/back.png" alt="返回" class="back">
+        <div class="title">个人主页</div>
+    </div>
+    <div class="container">
         <div class="user">
-            <img class="login_img" src="img/login.png" alt="手机号">
-            <input type="text" class="user_input" placeholder="请输入手机号" />
+            <img src="img/avatar.png" alt="头像" class="avatar">
+            <div class="user_info">
+                <div class="person">
+                    <div class="name">高素雅</div>
+                    <div class="age">51岁</div>
+                </div>
+                <div class="location">
+                    <img src="img/location.png" alt="定位" class="location_png">
+                    <div class="addr">北京 · 通州 · 果园</div>
+                </div>
+            </div>
         </div>
-        <div class="password">
-            <img class="login_img" src="img/password.png" alt="密码">
-            <input type="password" class="password_input" placeholder="请输入密码">
+        <div class="skill">
+            <div class="skill_title">专业技能</div>
+            <ul class="condition">
+                <li><img src="img/star.png" alt="图标" class="star">住家</li>
+                <li><img src="img/star.png" alt="图标" class="star">不含餐</li>
+            </ul>
+            <ul class="introduction">
+                <li class="intro_item">
+                    <div class="item_title">从业年限</div>
+                    <div class="item_content">5年</div>
+                </li>
+                <li class="intro_item">
+                    <div class="item_title">工作时间</div>
+                    <div class="item_content">全天</div>
+                </li>
+                <li class="intro_item">
+                    <div class="item_title">服务价格</div>
+                    <div class="item_content red">25元/小时</div>
+                </li>
+                <li class="intro_item">
+                    <div class="item_title">自我介绍</div>
+                    <div class="item_content">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</div>
+                </li>
+            </ul>
         </div>
-        <button class="login_btn">登  录</button>
-        <a class="notice" href="#">忘记密码</a>
+    </div>
+    <div class="footer">
+        <button>留言</button>
+        <button class="active">电话联系</button>
     </div>
 </body>
 </html>
