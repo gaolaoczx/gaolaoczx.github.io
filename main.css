@@ -5,187 +5,265 @@ body
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif;
 }
 
+.header
+{
+    height: 45px;
+    background-color: rgb(95, 192, 205);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btn_header
+{
+    position: absolute;
+    left: 50%;
+    margin-left: -72px;
+}
+
+.btn_header button
+{
+    background-color: rgb(85, 168, 179);
+    border: 0px;
+    font-weight: 500!important;
+}
+
+.btn_active
+{
+    background-color: white!important;
+    color:  rgb(95, 192, 205);
+    border-radius: 3px!important;
+}
+
+.btn_active:hover
+{
+    background-color: #5a6268!important;
+}
+
+.location_header 
+{
+    position: absolute;
+    right: 20px;
+    width: 21px; 
+    height: 22px;
+    background: url('img/task6.png') -62px -5px;
+    background-size: 119px 87px; /* 原尺寸为238*174 等比例缩小为一半 偏移量和图片的长宽也一样为一半*/
+}
+
+.select
+{
+    height: 45px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+    color: rgb(150, 150, 150);
+}
+
+.dropdown 
+{
+    flex: 1;
+    align-self: center;
+    margin-left: 8%;
+    position: relative;
+    display: inline-block;
+    border-right: 1px solid #eee;
+}
+
+.dropdown_img
+{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -2px;
+    display: inline-block;
+    width: 6.5px; 
+    height: 4px;
+    background: url('img/task6.png') -38px -62px;
+    background-size: 119px 87px; 
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.dropdown-content p
+{
+    padding: 5px;
+    margin: 0px;
+}
+
 .container
 {
-    height: 500px;
+    padding: 0px;
+    height: calc(100vh - 160px);
     overflow-y: scroll;
 }
 
-.header
-{
-    height: 48px;
-    position: relative;  
-    background-color: rgb(95, 192, 205);
-}
-
-.back
-{
-    width: 20px;
-    position: absolute;
-    left: 10px;
-    top: 12.5px;
-}
-
-.title
-{
-    color: white;
-    font-size: 18px;
-    display: inline;
-    position: absolute;
-    left: 50%;
-    margin-left: -36px;
-    line-height: 48px;
-}
-
-.user
-{
-    background: url(img/bg.png) no-repeat center top;
-    background-size: 100%;
-    height: 145px;
-    display: flex;
-    align-items: center;
-}
-
-.avatar
-{
-    width: 80px;
-    margin: 20px;
-}
-
-.user_info
-{
-    color: white;
-}
-
-.name,.age
-{
-    font-size: 16px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-.location
-{
-    display: flex;
-    align-items: center;
-}
-
-.location_png
-{
-    width: 15px;
-    margin-left: 5px;
-    display: inline-block;
-}
-
-.addr
-{
-    font-size: 14px;
-    margin-left: 10px;
-    display: inline-block;
-}
-
-.skill_title
-{
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    border-left: 3px solid rgb(95, 192, 205);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
-}
-
-ul
+.person
 {
     list-style:none;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
-.condition
+.person_item
 {
-    border-top: 1px solid rgb(185, 185, 185);
-    padding-left: 10px;
-}
-
-.condition li
-{
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    font-weight: 500;
-}
-
-.star
-{
-    width: 15px;
-    margin-right: 3px;
-}
-
-.intro_item
-{
-    margin: 10px;
-    margin-top: 0px;
-    padding: 10px;
-    padding-top: 20px;
-    border-top: 1px solid rgb(185, 185, 185);
-    font-weight: 500;
-    font-size: 16px;
+    padding: 10px 5px;
+    margin: 0px;
+    border-bottom: 1px solid #eee;
     display: flex;
+    align-items: center;
+    position: relative;
+    height: 90px;
 }
 
-.item_title
+.info
 {
+    position: absolute;
+    left: 10px;
+}
+
+.date,.location
+{
+    font-size: 13px;
+    color: rgb(206, 204, 204);
+}
+
+.date_img
+{
+    width: 12.5px; 
+    height: 12px;
+    background: url('img/task6.png') -93px -62px;
+    background-size: 119px 87px; 
     display: inline-block;
-    color: #ccc;
-    border-right: 2px solid #ccc;
-    padding-right: 20px;
-    line-height: 18px;
-    align-self: center; /* 在父元素中垂直居中，高度不会被拉高 */
+    vertical-align:middle;
 }
 
-.item_content
+.location_img
 {
+    width: 9.5px; 
+    height: 11.5px;
+    background: url('img/task6.png') -62px -37px;
+    background-size: 119px 87px; 
     display: inline-block;
-    margin-left: 10px;
-    flex: 1;  /* 若同为子元素，只有自己是1，其他是0，则其他元素只占最小空间，自己占满剩余空间 */
+    vertical-align:middle;
 }
 
-.red
+.period
 {
-    color: red;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 40vw; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 
-.intro_item:last-child
+.price
 {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    position: absolute;
+    right: 10px;
+    color: rgb(230, 60, 15);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.go
+{
+    width: 9.5px; 
+    height: 16.5px;
+    background: url('img/task6.png') -93px -35.5px;
+    background-size: 119px 87px; 
+    display: inline-block;
+    vertical-align:middle;
+    margin-left: 5px;
 }
 
 .footer
 {
+    background-color: rgb(248, 248, 248);
+    height: 62px;
+    width: 100%;
     position: absolute;
-    background-color: white;
-    bottom: 10px;
+    bottom: 0px;
 }
 
-button
+.footer div
 {
-    background-color: white;
-    border:2px solid rgb(95, 192, 205);
-    margin-left: 4vw;
-    width: 44vw;
-    height: 45px;
-    font-size: 19px;
-    color: rgb(95, 192, 205);
-    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* 按钮和文件竖向对齐 */
 }
 
-.active
+.footer button
 {
-    background-color: rgb(95, 192, 205);
-    color: white;
+    border: 0px;
+    outline:none;
+    background-size: 157px 115px; /* 原尺寸为238*174  0.66倍*/
 }
+
+.footer p
+{
+    display: inline-block;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 3px;
+    font-size: 5px;
+}
+
+.home
+{
+    margin-top: 10px;
+    left: 15%;
+}
+
+.btn_home
+{
+    width: 30px; 
+    height: 26.5px;
+    background: url('img/task6.png') -6.5px -82px;
+}
+
+.home p
+{
+    color: rgb(85, 168, 179);
+}
+
+.publish
+{
+    left: 50%;
+    margin-left: -31px;
+}
+
+.btn_publish
+{
+    width: 62px; 
+    height: 62px;
+    background: url('img/task6.png') -6.5px -6.5px;
+}
+
+.user
+{
+    margin-top: 10px;
+    right: 15%;
+}
+
+.btn_user
+{
+    width: 27.5px; 
+    height: 26.5px;
+    background: url('img/task6.png') -122.5px -6.5px;
+}
+
+

@@ -4,57 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
-    <title>个人主页</title>
+    <title>护工列表</title>
 </head>
 <body>
     <div class="header"> 
-        <img src="img/back.png" alt="返回" class="back">
-        <div class="title">个人主页</div>
+        <div class="btn-group btn_header">
+            <button type="button" class="btn btn-secondary">找雇主</button>
+            <button type="button" class="btn btn-secondary btn_active">找护工</button>
+        </div>
+        <div class="location_header"></div>
     </div>
-    <div class="container">
-        <div class="user">
-            <img src="img/avatar.png" alt="头像" class="avatar">
-            <div class="user_info">
-                <div class="person">
-                    <div class="name">高素雅</div>
-                    <div class="age">51岁</div>
-                </div>
-                <div class="location">
-                    <img src="img/location.png" alt="定位" class="location_png">
-                    <div class="addr">北京 · 通州 · 果园</div>
-                </div>
+    <div class="select">
+        <div class="dropdown">
+            <span class="dropdown_title">所在地</span>
+            <div class="dropdown_img"></div>
+            <div class="dropdown-content">
+                <p>北京</p>
+                <p>上海</p>
             </div>
         </div>
-        <div class="skill">
-            <div class="skill_title">专业技能</div>
-            <ul class="condition">
-                <li><img src="img/star.png" alt="图标" class="star">住家</li>
-                <li><img src="img/star.png" alt="图标" class="star">不含餐</li>
-            </ul>
-            <ul class="introduction">
-                <li class="intro_item">
-                    <div class="item_title">从业年限</div>
-                    <div class="item_content">5年</div>
-                </li>
-                <li class="intro_item">
-                    <div class="item_title">工作时间</div>
-                    <div class="item_content">全天</div>
-                </li>
-                <li class="intro_item">
-                    <div class="item_title">服务价格</div>
-                    <div class="item_content red">25元/小时</div>
-                </li>
-                <li class="intro_item">
-                    <div class="item_title">自我介绍</div>
-                    <div class="item_content">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</div>
-                </li>
-            </ul>
+        <div class="dropdown">
+            <span class="dropdown_title">食宿</span>
+            <div class="dropdown_img"></div>
+            <div class="dropdown-content">
+                <p>包吃</p>
+                <p>包住</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropdown_title">病人情况</span>
+            <div class="dropdown_img"></div>
+            <div class="dropdown-content">
+                <p>可自理</p>
+                <p>瘫痪</p>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <button>留言</button>
-        <button class="active">电话联系</button>
+    <div class="container">
+        <ul class="person">
+            <li class="person_item">
+                <div class="info">
+                    <div class="date">
+                        <div class="date_img"></div> 服务日期
+                    </div>
+                    <div class="period">2015-7-5 至 2015-7-12</div>
+                    <div class="location">
+                        <div class="location_img"></div> 北京 · 通州 · 果园
+                    </div>
+                </div>
+                <div class="price">
+                    25元/小时
+                    <div class="go"></div>
+                </div>
+            </li>
+            <li class="person_item">
+                <div class="info">
+                    <div class="date">
+                        <div class="date_img"></div> 服务日期
+                    </div>
+                    <div class="period">2015-7-5 至 2015-7-12</div>
+                    <div class="location">
+                        <div class="location_img"></div> 北京 · 通州 · 果园
+                    </div>
+                </div>
+                <div class="price">
+                    25元/小时
+                    <div class="go"></div>
+                </div>
+            </li>
+            <li class="person_item">
+                <div class="info">
+                    <div class="date">
+                        <div class="date_img"></div> 服务日期
+                    </div>
+                    <div class="period">2015-7-5 至 2015-7-12</div>
+                    <div class="location">
+                        <div class="location_img"></div> 北京 · 通州 · 果园
+                    </div>
+                </div>
+                <div class="price">
+                    25元/小时
+                    <div class="go"></div>
+                </div>
+            </li>
+            <li class="person_item">
+                <div class="info">
+                    <div class="date">
+                        <div class="date_img"></div> 服务日期
+                    </div>
+                    <div class="period">2015-7-5 至 2015-7-12</div>
+                    <div class="location">
+                        <div class="location_img"></div> 北京 · 通州 · 果园
+                    </div>
+                </div>
+                <div class="price">
+                    25元/小时
+                    <div class="go"></div>
+                </div>
+            </li>
+            <li class="person_item">
+                <div class="info">
+                    <div class="date">
+                        <div class="date_img"></div> 服务日期
+                    </div>
+                    <div class="period">2015-7-5 至 2015-7-12</div>
+                    <div class="location">
+                        <div class="location_img"></div> 北京 · 通州 · 果园
+                    </div>
+                </div>
+                <div class="price">
+                    25元/小时
+                    <div class="go"></div>
+                </div>
+            </li>
+            <li class="person_item">
+                <div class="info">
+                    <div class="date">
+                        <div class="date_img"></div> 服务日期
+                    </div>
+                    <div class="period">2015-7-5 至 2015-7-12</div>
+                    <div class="location">
+                        <div class="location_img"></div> 北京 · 通州 · 果园
+                    </div>
+                </div>
+                <div class="price">
+                    25元/小时
+                    <div class="go"></div>
+                </div>
+            </li>
+        </ul>
     </div>
+    <div class="footer">
+        <div class="home">
+            <button class="btn_home"></button>
+            <p>首页</p>
+        </div>
+        <div class="publish">
+            <button class="btn_publish"></button>
+        </div>
+        <div class="user">
+            <button class="btn_user"></button>
+            <p>我的</p>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
