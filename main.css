@@ -10,7 +10,6 @@ body
     height: 45px;
     background-color: rgb(95, 192, 205);
     display: flex;
-    align-items: center;
     position: relative;
 }
 
@@ -18,7 +17,8 @@ body
 {
     position: absolute;
     left: 50%;
-    margin-left: -72px;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .btn_header button
@@ -44,6 +44,8 @@ body
 {
     position: absolute;
     right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 21px; 
     height: 22px;
     background: url('img/task6.png') -62px -5px;
@@ -63,7 +65,7 @@ body
 {
     flex: 1;
     align-self: center;
-    margin-left: 8%;
+    padding-left: 8%;
     position: relative;
     display: inline-block;
     border-right: 1px solid #eee;
@@ -85,9 +87,11 @@ body
 .dropdown-content 
 {
     display: none;
-    position: absolute;
     background-color: #eee;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    position: absolute;
+    left:0%;
     padding: 10px 10px;
     z-index: 1;
 }
@@ -100,7 +104,7 @@ body
 .dropdown-content p
 {
     padding: 5px;
-    margin: 0px;
+    margin:0px 0px 0px 22%;
 }
 
 .container
@@ -123,7 +127,6 @@ body
     margin: 0px;
     border-bottom: 1px solid #eee;
     display: flex;
-    align-items: center;
     position: relative;
     height: 90px;
 }
@@ -132,6 +135,8 @@ body
 {
     position: absolute;
     left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .date,.location
@@ -175,6 +180,8 @@ body
 {
     position: absolute;
     right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     color: rgb(230, 60, 15);
     font-size: 15px;
     font-weight: 400;
@@ -218,8 +225,8 @@ body
 {
     display: inline-block;
     margin: 5px 0px 0px 0px;
-    padding: 0px 0px 0px 3px;
-    font-size: 5px;
+    padding: 0px 0px 0px 2.5px;
+    font-size: 13px;
 }
 
 .home
