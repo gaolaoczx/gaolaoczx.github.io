@@ -1,0 +1,224 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif;
+}
+
+.abs-center
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.horizontal-center
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vertical-center
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.vertical-center-img
+{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.clear-btn-style
+{
+    border: 0px;
+    outline:none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+.header
+{
+    height: 45px;
+    background-color: rgb(41, 189, 224);
+    position: relative;
+}
+
+.header-menu
+{
+    width: calc(39px*0.5); 
+    height: calc(40px*0.5);
+    background: url('img/task7.png') calc(-213px*0.5) calc(-234px*0.5);
+    background-size: calc(417px*0.5) calc(393px*0.5); 
+    left: 10px;
+}
+
+.header-text
+{
+    color: rgb(215, 240, 247);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header-close
+{
+    width: calc(36px*0.5); 
+    height: calc(36px*0.5);
+    background: url('img/task7.png') calc(-272px*0.5) calc(-234px*0.5);
+    background-size: calc(417px*0.5) calc(393px*0.5); 
+    right: 10px;
+}
+
+.container
+{
+    /* height: calc(100vh - 45px); */
+    background-color: rgb(41, 189, 224);
+}
+
+.notice
+{
+    height: 45px;
+    background-color: rgb(185, 233, 245);
+    position: relative;
+}
+
+.notice-vote
+{
+    line-height: 45px;
+    margin-left: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 15px;
+}
+
+.notice-triangle
+{
+    position: absolute;
+    left: 40px;
+    top: 100%;
+    border-top: 10px solid rgb(185, 233, 245);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.notice-audio
+{
+    width: calc(52px*0.5); 
+    height: calc(52px*0.5);
+    background: url('img/task7.png') calc(-10px*0.5) calc(-234px*0.5);
+    background-size: calc(417px*0.5) calc(393px*0.5); 
+    right: 10px;
+}
+
+.click
+{
+    margin: 10px 0px 10px 42px;
+    font-size: 14px;
+    color: rgb(230, 244, 248);
+}
+
+.uers-list
+{
+    width: 100vw;
+    height: 90vw; /* 撑开高度 */
+}
+
+.user
+{
+    float: left; 
+    width: 20vw;
+    height: 20vw;
+    margin: 3vw 5.33vw 5vw 5.33vw;
+    background-color: rgb(245,201,123);
+    border: 1vw solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name
+{
+    flex: 3;
+    text-align: center;
+    line-height: 15vw; /* 其他方式无效 */
+    font-size: 15px;
+}
+
+.user-num
+{
+    flex: 1;
+    text-align: center;
+    line-height: 5vw;
+    background-color: rgb(131,176,154);
+    font-size: 13px;  /* 防止图片缩小时高度无法继续缩小 */
+}
+
+.user-option
+{
+    display: none;
+    /* display: block; */
+    white-space: nowrap; /* 不换行 */
+    position: absolute;
+    top: 22vw;
+    left: -2px;
+}
+
+.user-option img
+{
+    display: inline-block;
+    margin-right:-3px;
+    width: 5vw;
+    height: 5vw;
+}
+
+.user:hover .user-option
+{
+    display: block;
+}
+
+.bar-block
+{
+    float: left; 
+    width: 20vw;
+    height: 1vw;
+    margin: 6vw 5.3vw 0px 5.3vw;
+    background-color: rgb(245,201,123);
+    border: 1vw solid white;
+    border-bottom: 0px;
+}
+
+.small
+{
+    margin-right: calc(5.3vw - 6px);
+}
+
+.bar
+{
+    margin: 8vw 0vw 5vw 5.33vw;
+    width: 87vw;
+    border-bottom: 1px solid white;
+}
+
+.btn_vote
+{
+    width: 80vw;
+    height: 45px;
+    margin: 0px 10vw 10vw 10vw;
+    padding: 0px;
+    border: 0px;
+    background-color: rgb(245,201,123);
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn_vote a
+{
+    color: white;
+}

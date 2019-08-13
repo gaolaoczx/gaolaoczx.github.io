@@ -1,0 +1,174 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif;
+}
+
+.abs-center
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.horizontal-center
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vertical-center
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.vertical-center-img
+{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.clear-btn-style
+{
+    border: 0px;
+    outline:none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.header
+{
+    height: 45px;
+    background-color: rgb(41, 189, 224);
+    position: relative;
+}
+
+.header-menu
+{
+    width: calc(34px*0.5); 
+    height: calc(27px*0.5);
+    background: url('img/task7.png') calc(-10px*0.5) calc(-306px*0.5);
+    background-size: calc(417px*0.5) calc(393px*0.5); 
+    margin-left: 10px;
+}
+
+.container
+{
+    height: calc(100vh - 45px);
+    background-color: rgb(240, 240, 240);
+    padding: 10px 15px 20px 15px;
+}
+
+.last-game
+{
+    background-color: white;
+    position: relative;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.last-game a
+{
+    display: inline-block;
+    margin: 0px;
+    white-space: nowrap;  /*不换行*/
+    font-size: 18px;
+    color: rgb(154, 154, 154);
+}
+
+.goback-img
+{
+    width: calc(25px*0.5); 
+    height: calc(40px*0.5);
+    background: url('img/task7.png') calc(-379px*0.5) calc(-85px*0.5);
+    background-size: calc(417px*0.5) calc(393px*0.5); 
+    right: 5px;
+}
+
+.select
+{
+    background-color: white;
+    position: relative;
+    /* height: calc(100vh - 145px); */
+}
+
+.sel-header
+{
+    font-size: 18px;
+    color: rgb(251, 180, 53);
+    border-bottom: 1px solid rgb(251, 180, 53);
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.sel-list
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+.version
+{
+    background-color: rgb(105, 209, 233);
+    font-size: 17px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.version a
+{
+    color:rgb(245, 245, 245);
+}
+
+.user-num
+{
+    display: block;
+    margin: 0px;
+    white-space: nowrap;  /*不换行*/
+    font-size: 18px;
+    color: rgb(154, 154, 154);
+    font-size: 15px;
+    text-align: center;
+}
+
+.next-page
+{
+    width: calc(28px*0.5); 
+    height: calc(55px*0.5);
+    background: url('img/task7.png') calc(-379px*0.5) calc(-10px*0.5);
+    background-size: calc(417px*0.5) calc(393px*0.5); 
+    position: absolute;
+    top:calc(50% - 15px);
+    right: 5px;
+}
+
+.sel-pages
+{
+    text-align: center;
+}
+
+.page
+{
+    background-color: rgb(230, 230, 230);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.page-active
+{
+    background-color: rgb(105, 209, 233);
+}
