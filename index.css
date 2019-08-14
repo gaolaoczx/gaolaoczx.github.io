@@ -71,17 +71,25 @@ a
 {
     background-color: white;
     position: relative;
+    display: block;
     height: 60px;
     margin-bottom: 10px;
 }
 
-.last-game a
+.last-game:hover button
+{
+    font-size: 20px;
+}
+
+.last-game button
 {
     display: inline-block;
     margin: 0px;
     white-space: nowrap;  /*不换行*/
     font-size: 18px;
     color: rgb(154, 154, 154);
+    background-color: white;
+    border: 0;
 }
 
 .goback-img
@@ -119,6 +127,7 @@ a
 
 .version
 {
+    display: block;
     background-color: rgb(105, 209, 233);
     font-size: 17px;
     height: 70px;
@@ -127,9 +136,17 @@ a
     margin: 10px 0px;
 }
 
-.version a
+.version:hover button
+{
+    font-size: 20px;
+}
+
+.version button
 {
     color:rgb(245, 245, 245);
+    background-color: rgb(105, 209, 233);
+    border: 0;
+    font-size: 18px;
 }
 
 .user-num

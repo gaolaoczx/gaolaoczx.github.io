@@ -2,6 +2,7 @@ body
 {
     padding: 0px;
     margin: 0px;
+    background-color: rgb(41, 189, 224);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif;
 }
 
@@ -44,12 +45,11 @@ a
     text-decoration: none;
 }
 
-
 .header
 {
     height: 45px;
-    background-color: rgb(41, 189, 224);
     position: relative;
+    background-color: rgb(41, 189, 224);
 }
 
 .header-menu
@@ -79,8 +79,8 @@ a
 
 .container
 {
-    /* height: calc(100vh - 45px); */
     background-color: rgb(41, 189, 224);
+    /* height: calc(100vh - 45px - 75px); */
 }
 
 .notice
@@ -124,47 +124,49 @@ a
     color: rgb(230, 244, 248);
 }
 
+.users-all
+{    
+    height: calc(100vh - 45px - 45px - 19px - 100px - 75px);
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .uers-list
 {
-    width: 100vw;
-    height: 90vw; /* 撑开高度 */
+    display: flex;
 }
 
 .user
 {
-    float: left; 
-    width: 20vw;
+    flex: 1;
     height: 20vw;
     margin: 3vw 5.33vw 5vw 5.33vw;
     background-color: rgb(245,201,123);
     border: 1vw solid white;
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
 .user-name
 {
-    flex: 3;
     text-align: center;
-    line-height: 15vw; /* 其他方式无效 */
+    line-height: 15vw; 
     font-size: 15px;
 }
 
 .user-num
 {
-    flex: 1;
     text-align: center;
     line-height: 5vw;
+    font-size: 13px; 
     background-color: rgb(131,176,154);
-    font-size: 13px;  /* 防止图片缩小时高度无法继续缩小 */
 }
 
 .user-option
 {
     display: none;
     /* display: block; */
-    white-space: nowrap; /* 不换行 */
+    white-space: nowrap; 
     position: absolute;
     top: 22vw;
     left: -2px;
@@ -183,42 +185,28 @@ a
     display: block;
 }
 
-.bar-block
+.footer
 {
-    float: left; 
-    width: 20vw;
-    height: 1vw;
-    margin: 6vw 5.3vw 0px 5.3vw;
-    background-color: rgb(245,201,123);
-    border: 1vw solid white;
-    border-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid white;
+    background-color: rgb(41, 189, 224);
 }
 
-.small
+.btn_a:hover .btn_vote
 {
-    margin-right: calc(5.3vw - 6px);
-}
-
-.bar
-{
-    margin: 8vw 0vw 5vw 5.33vw;
-    width: 87vw;
-    border-bottom: 1px solid white;
+    font-size: 20px;
 }
 
 .btn_vote
 {
     width: 80vw;
     height: 45px;
-    margin: 0px 10vw 10vw 10vw;
+    margin: 15px 10vw;
     padding: 0px;
     border: 0px;
     background-color: rgb(245,201,123);
     text-align: center;
     font-size: 18px;
-}
-
-.btn_vote a
-{
     color: white;
 }

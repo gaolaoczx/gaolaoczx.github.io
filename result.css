@@ -79,14 +79,15 @@ a
 .container
 {
     height: calc(100vh - 45px);
-    overflow: hidden auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .notice
 {
     background-color: rgb(41, 189, 224);
     position: relative;
-    padding-bottom: calc( 5vw + 102px);
+    padding-bottom: calc( 6vw + 102px);
 }
 
 .win-logo
@@ -182,20 +183,27 @@ a
 .footer
 {
     position: fixed;
-    top: calc( 100vh - 60px);
+    bottom: 0;
     background-color: rgba(41, 189, 224, 0.5);
-    padding: 10px;
-    width: calc(100vw - 20px);
-    height: 40px;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
+}
+
+.footer a:hover button
+{
+    font-size: 20px;
 }
 
 .footer button
 {
     width: 40vw;
+    height: 40px;
+    margin: 10px 0;
     border-radius: 5px;
     border: 0px;
+    color: white;
+    font-size: 18px;
 }
 
 .btn_again
@@ -207,13 +215,4 @@ a
 {
     background-color: rgb(251,180,53);
 }
-
-.footer a
-{
-    color: white;
-    font-size: 18px;
-}
-
-
-
 
